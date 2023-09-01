@@ -20,6 +20,10 @@ body {
     z-index: 99;
 }
 
+.navbar a:active, .account:active, .dark-mode-toggle:active {
+    color: rgba(255, 255, 255, 0); /* Mantén el color predeterminado al hacer clic (puede ajustarse según tus preferencias) */
+}   
+
 /* Tu CSS existente */
 
 .menu-toggle.active .bar:nth-child(1) {
