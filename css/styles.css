@@ -21,6 +21,11 @@ body {
     transition: all 0.5s ease-in-out;
     padding: 4px;
     border-radius: 10px;
+    -webkit-tap-highlight-color: transparent; /* Deshabilita el resaltado en dispositivos iOS */
+    -webkit-touch-callout: none; /* Deshabilita el menú emergente en dispositivos iOS */
+    -moz-user-select: none; /* Deshabilita la selección en dispositivos Firefox */
+    -ms-user-select: none; /* Deshabilita la selección en dispositivos Microsoft Edge */
+    user-select: none; /* Deshabilita la selección en otros navegadores */
   
     
 }   
@@ -76,6 +81,11 @@ body {
     transition: all 0.5s ease-in-out;
     padding: 4px;
     border-radius: 10px;
+    -webkit-tap-highlight-color: transparent; /* Deshabilita el resaltado en dispositivos iOS */
+    -webkit-touch-callout: none; /* Deshabilita el menú emergente en dispositivos iOS */
+    -moz-user-select: none; /* Deshabilita la selección en dispositivos Firefox */
+    -ms-user-select: none; /* Deshabilita la selección en dispositivos Microsoft Edge */
+    user-select: none; /* Deshabilita la selección en otros navegadores */
 }
 
 .account:hover{
