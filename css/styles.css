@@ -18,11 +18,18 @@ body {
     flex-direction: column;
     cursor: pointer;
     z-index: 99;
-}
-
-.navbar a:active, .account:active, .dark-mode-toggle:active {
-    color: rgba(255, 255, 255, 0); /* Mantén el color predeterminado al hacer clic (puede ajustarse según tus preferencias) */
+    transition: all 0.5s ease-in-out;
+    padding: 4px;
+    border-radius: 10px;
+  
+    
 }   
+
+.menu-toggle:hover{
+    background-color: rgb(88, 1, 42);
+
+}
+ 
 
 /* Tu CSS existente */
 
@@ -66,6 +73,13 @@ body {
     cursor: pointer;
     position: relative; /* Agrega una posición relativa al elemento */
     z-index: 99;
+    transition: all 0.5s ease-in-out;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.account:hover{
+    color:  rgb(88, 1, 42);
 }
 
 .close-button {
