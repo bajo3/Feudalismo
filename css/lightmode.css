@@ -1,0 +1,73 @@
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para el contenedor del botón de Modo Oscuro */
+.dark-mode-container {
+    position: absolute; 
+    right: 10%; /* Cambia el valor a 10% para posicionar el 70% desde el lado derecho */
+}
+
+/* Estilos para el botón de Modo Oscuro */
+.dark-mode-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease; /* Transición suave para el giro */
+    transform-origin: center;
+    position: relative;
+}
+
+/* Estilos para los iconos de sol y luna */
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 100;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.sun {
+    left: 10%;
+}
+
+.moon {
+    right: 10%;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode-toggle.dark {
+    background-color: #111;
+    transform: rotate(180deg); /* Gira el botón 180 grados */
+}
+
+.dark-mode-toggle.dark .sun {
+    display: none;
+}
+
+.dark-mode-toggle.dark .moon {
+    display: block;
+}
+
+.dark-mode-toggle:not(.dark) .sun {
+    display: block;
+}
+
+.dark-mode-toggle:not(.dark) .moon {
+    display: none;
+}
