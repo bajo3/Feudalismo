@@ -178,3 +178,98 @@ body {
     margin-left: 0;
     transition: margin-left 0.3s ease;
 }
+
+
+/*Estilos de las cards*/
+
+/* Estilos para las tarjetas de campeones */
+.champion-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.champion-card img {
+    max-width: 100%;
+}
+
+.details-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el pop-up de detalles (inicialmente oculto) */
+.champion-details-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Estilos para las tarjetas de campeones */
+/* Estilos para las tarjetas de campeones */
+#championCards {
+    display: flex; /* Establece el contenedor como flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan automáticamente a la siguiente fila */
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+  }
+  
+  .champion-card {
+    flex: 0 0 calc(18%); /* Establece el ancho deseado para mostrar 3 tarjetas por fila */
+    margin: 5px; /* Espacio entre las tarjetas */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .champion-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .champion-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .champion-card p {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Estilos para hacer las tarjetas responsivas */
+  @media (max-width: 768px) {
+    .champion-card {
+      flex: 0 0 calc(50% - 20px); /* Establece el ancho deseado para mostrar 2 tarjetas por fila en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .champion-card {
+      flex: 0 0 calc(100% - 20px); /* Establece el ancho deseado para mostrar 1 tarjeta por fila en pantallas pequeñas */
+    }
+  }
+  
