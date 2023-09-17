@@ -188,7 +188,13 @@ body {
     margin: 10px;
     padding: 10px;
     text-align: center;
+    opacity: 0; /* Configura la opacidad inicial en 0 para que las tarjetas estén ocultas */
+  transition: opacity 0.5s ease; /* Transición de opacidad durante 0.5 segundos con efecto de desvanecimiento suave */
 }
+
+.champion-card.show {
+    opacity: 1;
+  }
 
 .champion-card img {
     max-width: 100%;
@@ -271,5 +277,72 @@ h1{
     .champion-card {
       flex: 0 0 calc(100% - 20px); /* Establece el ancho deseado para mostrar 1 tarjeta por fila en pantallas pequeñas */
     }
+  }
+  
+
+  /*Ocultar Cards*/
+  .extra-details {
+  display: none;
+}
+
+.toggle-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #555;
+}
+
+/* Estilos para las estadísticas dentro de la tarjeta del campeón */
+.champion-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .champion-card li {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333; /* Color de texto */
+  }
+  
+  /* Estilos para los títulos de estadísticas */
+  .champion-card li::before {
+    content: "• "; /* Punto de viñeta para cada estadística */
+    color: #FF5733; /* Color del punto de viñeta */
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+
+  /* Estilos para ocultar las estadísticas por defecto */
+.extra-details {
+    display: none;
+}
+
+/* Estilos para mostrar las estadísticas cuando se hace clic en el botón "Ver Stats" */
+.show-stats .extra-details {
+    display: block;
+}
+
+#loadMoreButton {
+    display: block;
+    margin: 20px auto; /* Esto centra el botón horizontalmente en su contenedor */
+    background-color: #0074e4; /* Color de fondo azul */
+    color: white; /* Color del texto en blanco */
+    padding: 10px 20px; /* Espaciado interno para hacer el botón más grande */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+  }
+  
+  #loadMoreButton:hover {
+    background-color: #005aaa; /* Color de fondo azul más oscuro al pasar el cursor por encima */
   }
   
