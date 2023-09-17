@@ -28,6 +28,8 @@
                 </div>
             </div>
 
+         
+
             <div class="account">
                 <i class="fas fa-user"></i>
                 <div class="account-menu" id="accountMenu">
@@ -55,20 +57,16 @@
     <h1>League Of Legends</h1>
 
     <main>
-        <section class="home">
-
-        </section>
-        <section class="champions">
-            <div class="champion-cards">
-                <!-- Tarjetas de campeones se cargarán aquí -->
-                <div id="championCards">
-                </div>
-              </div>
-              
-        
-            
+        <div class="main-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar campeones por nombre">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <div class="champion-cards" id="championCards">
+                <!-- Aquí se cargarán las tarjetas de campeones -->
+            </div>
             <button id="loadMoreButton">Cargar más</button>
-        </section>
+        </div>
 
 
 

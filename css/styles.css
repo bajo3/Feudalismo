@@ -179,7 +179,39 @@ body {
     transition: margin-left 0.3s ease;
 }
 
+/*Buscador*/
 
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Añade margen inferior para separar del contenido anterior */
+  }
+  
+  #searchInput {
+    /* Agrega estilos adicionales según tus preferencias */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Añade margen derecho entre el input y el botón */
+  }
+  
+  #searchButton {
+    /* Agrega estilos adicionales según tus preferencias */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Cambia el color de fondo a tu elección */
+    color: #fff; /* Cambia el color del texto a tu elección */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
 /*Estilos de las cards*/
 
 /* Estilos para las tarjetas de campeones */
